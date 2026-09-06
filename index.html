@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poetry Anthology</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Book Navigation Controls -->
+  <div class="controls">
+    <button id="prev-btn" class="nav-btn"><i class="fa-solid fa-chevron-left"></i> Previous</button>
+    <span id="page-indicator" class="indicator">Cover</span>
+    <button id="next-btn" class="nav-btn">Next <i class="fa-solid fa-chevron-right"></i></button>
+    <div class="theme toggle">
+      <button id="theme-btn" class="nav-btn"><i class="fa-solid fa-sun"></i> Light Mode</button>
+    </div>
+  </div>
+
+
+  </div>
+
+  <!-- 3D Book Scene Container -->
+  <div class="scene">
+    <div id="book" class="book">
+
+      <!-- PAPER 1: Front Cover & Table of Contents -->
+      <div id="p1" class="paper z-6">
+        <div class="front cover-page">
+          <div class="cover-icon">🪷</div>
+          <h1 class="cover-title">Whispers of the<br>Indian Wind</h1>
+          <div class="cover-subtitle">A Curated Anthology of Five Timeless Poems</div>
+          <div class="cover-divider"></div>
+          <div class="cover-author">Masterpieces of Indian Literature</div>
+          <div class="click-hint">Click or Use Arrow Keys to Open</div>
+        </div>
+        <div class="back toc-page">
+          <h2 class="toc-title">Contents</h2>
+          <ul class="toc-list">
+            <li><span>1. Where the Mind is Without Fear</span> <i>Tagore</i></li>
+            <li><span>2. Indian Weavers</span> <i>Naidu</i></li>
+            <li><span>3. Night of the Scorpion</span> <i>Ezekiel</i></li>
+            <li><span>4. An Introduction</span> <i>Das</i></li>
+            <li><span>5. The Golden Light</span> <i>Sri Aurobindo</i></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PAPER 2: Poem 1 & Poem 2 -->
+      <div id="p2" class="paper z-5">
+        <div class="front poem-container">
+          <span class="poem-icon">🕊️</span>
+          <h2 class="poem-title">Where the Mind is Without Fear</h2>
+          <div class="poem-poet">Rabindranath Tagore</div>
+          <div class="poem-body">
+Where the mind is without fear and the head is held high
+Where knowledge is free
+Where the world has not been broken up into fragments
+By narrow domestic walls
+Where words come out from the depth of truth
+Where tireless striving stretches its arms towards perfection
+Where the clear stream of reason has not lost its way
+Into the dreary desert sand of dead habit
+Where the mind is led forward by thee
+Into ever-widening thought and action
+Into that heaven of freedom, my Father, let my country awake.
+          </div>
+          <div class="poem-footer">✦ ✦ ✦</div>
+        </div>
+        <div class="back poem-container">
+          <span class="poem-icon">🧵</span>
+          <h2 class="poem-title">Indian Weavers</h2>
+          <div class="poem-poet">Sarojini Naidu</div>
+          <div class="poem-body">
+Weavers, weaving at break of day,
+Why do you weave a garment so gay? ...
+Blue as the wing of a halcyon wild,
+We weave the robes of a new-born child.
+
+Weavers, weaving at fall of night,
+Why do you weave a garment so bright? ...
+Like the plumes of a peacock, purple and green,
+We weave the marriage-veils of a queen.
+
+Weavers, weaving solemn and still,
+What do you weave in the moonlight chill? ...
+White as a feather and white as a cloud,
+We weave a dead man's funeral shroud.
+          </div>
+          <div class="poem-footer">✦ ✦ ✦</div>
+        </div>
+      </div>
+
+      <!-- PAPER 3: Poem 3 & Poem 4 -->
+      <div id="p3" class="paper z-4">
+        <div class="front poem-container">
+          <span class="poem-icon">🦂</span>
+          <h2 class="poem-title">Night of the Scorpion</h2>
+          <div class="poem-poet">Nissim Ezekiel</div>
+          <div class="poem-body">
+I remember the night my mother
+was stung by a scorpion. Ten hours
+of steady rain had driven him
+to crawl beneath a sack of rice.
+
+Parting with his poison - flash
+of diabolic tail in the dark room -
+he risked the rain again.
+
+The peasants came like swarms of flies
+and buzzed the name of God a hundred times
+to paralyse the Evil One.
+          </div>
+          <div class="poem-footer">✦ ✦ ✦</div>
+        </div>
+        <div class="back poem-container">
+          <span class="poem-icon">✍️</span>
+          <h2 class="poem-title">An Introduction</h2>
+          <div class="poem-poet">Kamala Das</div>
+          <div class="poem-body">
+I don't know politics but I know the names
+Of those in power, and can repeat them like
+Days of week, or names of months, beginning with Nehru.
+I am Indian, very brown, born in Malabar.
+I speak three languages, write in
+Two, dream in one.
+
+Don't write in English, they said, English is
+Not your mother-tongue. Why not leave
+Me alone, critics, friends, visiting cousins,
+Every one of you?
+          </div>
+          <div class="poem-footer">✦ ✦ ✦</div>
+        </div>
+      </div>
+
+      <!-- PAPER 4: Poem 5 & Back Cover -->
+      <div id="p4" class="paper z-3">
+        <div class="front poem-container">
+          <span class="poem-icon">☀️</span>
+          <h2 class="poem-title">The Golden Light</h2>
+          <div class="poem-poet">Sri Aurobindo</div>
+          <div class="poem-body">
+Thy Golden Light came down into my brain
+And the dull grey cells became a fiery hive;
+A sun has risen in my heart's domain,
+Nature is now wide awake and alive.
+
+Thy Golden Light came down into my throat,
+A well of chanting thrill my speech became;
+Thought fills my words with a celestial note,
+My voice is a trumpet of the Eternal's name.
+
+Thy Golden Light came down into my feet,
+The earth now feels my firm, immortal tread;
+I walk on pathways of the infinite,
+By Thy luminous hand of mercy led.
+          </div>
+          <div class="poem-footer">✦ ✦ ✦</div>
+        </div>
+        <div class="back cover-page back-cover">
+          <div class="cover-icon">🪷</div>
+          <h2 class="cover-title">Whispers of the Indian Wind</h2>
+          <p class="back-text">Thank you for reading this curated collection of Indian poetry.</p>
+          <div class="cover-divider"></div>
+          <div class="cover-author">Fin.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
